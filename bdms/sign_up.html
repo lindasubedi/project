@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="icon" type="image" href="istockphoto-1171700662-640x640.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        background-image: url(rbc.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    body{
+        background-color:  #00000045;  
+        font-family: Arial, sans-serif;
+        display: flex;
+        /* background-color: rgba(13, 6, 6, 0.7); */
+    }
+    body::-webkit-scrollbar {
+      width: 0.1em;
+      height: 0em;
+    }
+    #sign{
+        font-size: 260%;
+        color: rgb(255, 0, 0);
+    }
+
+    .form{
+        padding: 60px 60px 60px 160px;
+        background-color: rgba(13, 6, 6, 0.7);
+        border-radius: 15px;
+        margin: 2% 20% 5% 20%;
+        /* width: 200px; */
+    }
+    .form label{
+        font-size: 165%;
+        color: white;
+    }
+    #username,#email,#password,#conpassword,#fname,#lname,#age,#weight,#allergy, #blood{
+        padding: 8px 70px;
+        padding-left: 10px;
+        padding-right: 75px;
+        border-radius: 5px;
+        border: 0.1px solid rgb(255, 255, 255);
+        font-size: 15px;
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+    }
+    #button{
+        padding: 8px 50px 8px 50px;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(255, 0, 0, 0.616);
+        cursor:pointer;
+    }
+    #button:hover{
+        background-color:rgb(103, 0, 0);
+        color: rgb(255, 255, 255) ;
+    }
+    #button:active {
+        background-color: rgba(255, 0, 0, 0.763);
+        border-color: #ffffff;
+    }
+    </style>
+<body>
+    
+ <body>
+    <form action="sign_up.php" method="post"  class="form">
+        <label for="signup" id="sign">Sign up</label><br><br><br>
+        <label for="fname">First name</label><br><br>
+        <input type="text" name="fnames" id="fname" placeholder="Enter your first name"><br><br>
+        <label for="lname">Last Name</label><br><br>
+        <input type="text" name="lnames" id="lname" placeholder="Enter your last name"><br><br>
+        <label for="age">Age</label><br><br>
+        <input type="text" name="ages" id="age" placeholder="Enter your age"><br><br>
+        <label for="weight">Weight</label><br><br>
+        <input type="text" name="weights" id="weight" placeholder="Enter your weight"><br><br>
+        <label for="blood">Blood Group</label><br><br>
+        <input type="text"  id="blood" placeholder="Enter your blood group"  name="blood" required><br><br>
+       
+        <!-- <label for="username">Username</label><br><br>
+        <input type="text" name="user" required id="username" placeholder="username"><br><br> -->
+        <label for="email">Email</label><br><br>
+        <input type="text" name="em" required id="email"  placeholder="email"><br><br>
+        <label for="password">Password</label><br><br>
+        <input type="password"  id="password" placeholder="Enter your password"  name="pass" required><br><br>
+        <label for="password">Confirm Password</label><br><br>
+        <input type="password" id="conpassword" placeholder="Confirm your password" name="cpass" required><br><br>
+        <label for="allergy">Allergy/ Disease if any:</label><br><br>
+        <textarea id="allergy" rows="3" cols="70" name="allergys" id="allergy"  placeholder="Enter if you have any diseases...."></textarea><br><br>
+        
+        <button type="submit" id="button" onclick="submit">Sign up</button><br><br>
+    </form>
+    
+</body>
+</html>
